@@ -1,0 +1,40 @@
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 20px;
+}
+ 
+ div{
+    height: 400px;
+    width: 300px;
+    border: 2px solid grey;
+    margin: 20px;
+    box-shadow: 2px 2px 4px 5px rgba(0, 0, 0, 0.563);
+    border-radius: 1rem;
+
+ }
+ button{
+    background-color: rgba(0, 0, 255, 0.362);
+    border-radius: 0.5rem;
+    color: white;
+    width:300px;
+    height: 30px;
+    text-align: center;
+ 
+ }
+ span{
+    color: blue;
+ }
+ #ab{
+    padding-left: 100px;
+ }
+ #cd{
+    width:15rem;
+    background-color: rgba(128, 128, 128, 0.305);
+    color: beige;
+    }
+div:hover{
+    background-color: rgba(155, 135, 222, 0.342);
+}
+ 

@@ -1,0 +1,78 @@
+Responsive DESIGN
+
+MOBILE            |            DESKTOP
+FIRST             |            FIRST
+APPROACH          |            APPROACH
+
+
+@media screen and(max-width:560px) {}                                                  max = atmost
+@media screen and(min-width:600px) {}                                                  min = atleast
+
+
+
+Mobile First                            |      Desktop first
+
+@media screen and(min-width:600px) {}   |       @media screen and(max-width:600px) {}   
+
+
+
+Responsive Breakpoints
+
+< 576px         -      Extra small
+576px-768px     -       small         ( like tablets)
+768px-992px     -        Medium
+>= 992 px       -       Large device
+>= 1024 px      -      Extra large
+
+
+
+
+
+
+Responsive Web Design is an approach to web development where a website automatically adjusts its layout
+content, and design based on the screen size, device, and orientation (mobile, tablet, desktop, etc.).
+
+
+Why Responsive Design is Important
+
+1 Mobile users are increasing rapidly
+
+2 Works on all screen sizes
+
+3 Better SEO (Google prefers responsive sites)
+
+4 Improved user experience
+
+5 Easier maintenance (single codebase)
+
+
+Media Queries are a CSS technique used to apply different styles for different devices
+or screen sizes such as mobile, tablet, laptop, and desktop.
+
+| Device  | Width         |
+| ------- | ------------- |
+| Mobile  | ≤ 576px       |
+| Tablet  | 577px – 768px |
+| Laptop  | 769px – 992px |
+| Desktop | ≥ 1024px      |
+
+
+
+Syntax of Media Query
+@media (condition) {
+  /* CSS rules */
+}
+
+
+@media (max-width: 768px) {
+  body {
+    background-color: lightgray;
+  }
+}
+
+
+@media (min-width: 768px) {
+  body {
+    background-color: green;
+  }
+}

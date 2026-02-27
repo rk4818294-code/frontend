@@ -1,0 +1,33 @@
+button{
+    background-color: rgba(255, 0, 247, 0.258);
+    color: azure;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    border: 0;
+   
+}
+span{
+    color: blue;
+}
+.abcd{
+    height: 200px;
+    width: 600px;
+    background-color: rgb(196, 255, 207); 
+    transition: all 0s ease-in;
+    border: 2px solid grey;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow:2px 2px 4px 5px rgb(123, 200, 8);
+     
+
+}
+p{
+    color: rgba(0, 0, 0, 0.74);
+}
+.abcd:hover{
+        background-color: rgba(131, 43, 226, 0.338);
+        font-style: italic;
+}
+
+    
+

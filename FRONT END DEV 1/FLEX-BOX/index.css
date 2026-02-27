@@ -1,0 +1,320 @@
+body{
+     /* text-align: center; */
+     background-image:linear-gradient(to top, rgba(0, 128, 0, 0.344), rgba(0, 0, 255, 0.623));
+} 
+
+div{
+    
+    height:100px;
+    width:150px;
+    display:inline-block;
+    border: 2px solid black;
+    
+}
+#container{
+  
+   height: 600px;
+   width: 600px;
+   background-color: rgba(128, 0, 113, 0.447);
+   display:flex;
+   flex-direction:row;
+   justify-content:center;
+   flex-wrap:wrap;
+   align-items:center; 
+    align-content:center; 
+
+
+}
+ #box1{
+   
+   background-color: #f08a04a4;
+   
+ }
+ #box2{
+   
+   background-color: rgb(229, 215, 250);
+   height: 200px; 
+   align-self:flex-end;
+   
+ }
+ #box3{
+   
+   background-color:rgb(64, 43, 226);
+   height: 75px;
+   
+ }
+ #box4{
+   
+   background-color:rgba(255, 0, 34, 0.349);
+   
+ }
+ #box5{
+   
+   background-color: rgba(222, 250, 215, 0.54);
+   
+ }  
+ .rohit{
+   height: 100px;
+   display:flex; 
+  justify-content:space-evenly;
+  background-color: #0a81734f;
+  color:white;
+  text-decoration: none;
+  text-align: center;
+}
+#bar{
+  height: 400px;
+  width: 400px;
+  background-color:white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+#bar1{
+  height: 350px;
+  width: 350px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#bar2{
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#bar3{
+height: 200px;
+  width: 200px;
+  
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+ #bar4{
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  align-self:center;
+ }
+ #div1{
+  margin: 100px;
+  height: 100px;
+  width: 100px;
+background-color: brown;
+border: 2px solid black;
+ transform: rotate(45deg);
+ transition: all 2s ease-in; 
+
+  /* rotate:z 90deg;
+ transition-duration: 2s;
+transition-property: all;
+transition-timing-function: steps(3);   */
+
+ }
+  /* @media(width:600px){
+  #div1{
+    background-color: coral;
+  }
+  
+ }
+ @media (min-width:600px) {
+  #div1{background-color: green;
+ }}  */
+  #div1:hover{
+    background-color: bisque;
+    color: burlywood;
+    font-style: italic;
+    transform: skew(30deg);
+     /* transform:translateX(220px);  */
+    }
+    #div2{
+      margin: 100px;
+   height: 200px;
+   width: 200px;
+   position:relative;
+   background-color: brown;
+    border: 2px solid black;
+    animation-name: coloranimate;
+    animation-duration: 2s;
+    /* animation-timing-function: ease-in; */
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+  animation-direction:normal;
+    }
+    @keyframes coloranimate{
+      from{left:0px;}
+      to{left:200px;}
+      
+    }
+    #div2:hover{
+background-color: #f08804;
+    }
+    #div3{
+      height: 150px;
+      width: 150px;
+      margin: 200px;
+      background-color: bisque;
+      position: relative;
+      /* animation-name: abcd;
+      animation-duration: 3s;
+      animation-iteration-count:infinite;
+      animation-direction:reverse; */
+      animation: abcd 3s ease-in 0s infinite normal; 
+    }
+    @keyframes abcd{
+      0%{
+        left: 0px;
+        background-color: black;
+      }
+      50%{
+        background-color: aqua;
+      }
+      100%{
+        left: 300px;
+        background-color: blueviolet;
+        color: aquamarine;
+      }
+    }
+    #div3:hover{
+      background-image:url(/Laptop-Wallpapers-Black-HD-1080p.jpg);
+      background-size:contain;
+      
+      background-repeat: no-repeat;
+      border-radius: 2rem;
+      position: relative;
+      height: 300px;
+      width: 300px;
+    }
+    #loader{
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      border: 20px solid white;
+      border-top: 20px solid black;
+      animation: spinAnimate 2s ease-in 0s infinite normal;
+      /* border-right:20px solid #f08804;
+      border-bottom:20px solid green;
+      display: inline-block; */
+      }
+      @keyframes spinAnimate{
+        from{
+          transform: rotate(0deg);
+        }
+         to{
+          transform: rotate(360deg);
+         }
+      }
+      #loader1{
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      border: 20px solid white;
+      border-top: 20px solid black;
+      animation: spinAnimate1 2s ease-in 0s infinite normal;
+      size: 45px;
+      border-right:20px solid #0fa2541a;
+      border-bottom:20px solid rgba(24, 21, 195, 0.197);
+      display: inline-block; 
+      }
+      @keyframes spinAnimate1{
+        from{
+          transform: rotate(0deg);
+        }
+         to{
+          transform: rotate(360deg);
+         }
+      }
+       #loader2{
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      border: 20px solid blue;
+      border-top: 20px solid black;
+      animation: spinAnimate2 2s ease-in 0s infinite normal;
+      border-right:20px solid #d14d1063;
+      border-bottom:20px solid rgba(10, 206, 190, 0.41);
+      display: inline-block;
+      justify-content: center;
+      
+      }
+      @keyframes spinAnimate2{
+        from{
+          transform: rotate(0deg);
+        }
+         to{
+          transform: rotate(360deg);
+         }
+      }
+      #loader3{
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      border: 20px solid blue;
+      border-top: 20px solid black;
+      animation: spinAnimate2 2s ease-in 0s infinite normal;
+      border-right:20px solid #12bc6d7f;
+      border-bottom:20px solid rgba(194, 25, 129, 0.256);
+      display:block;
+      
+      
+      }
+      @keyframes spinAnimate2{
+        from{
+          transform: rotate(0deg);
+        }
+         to{
+          transform: rotate(360deg);
+         }
+      }
+       #loader4{
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      border: 20px solid blue;
+      border-top: 20px solid black;
+      animation: spinAnimate2 2s ease-in 0s infinite normal;
+      border-right:20px solid #04cdf0;
+      border-bottom:20px solid rgba(209, 14, 134, 0.529);
+      display:inline-block;
+      
+      
+      }
+      @keyframes spinAnimate2{
+        from{
+          transform: rotate(0deg);
+        }
+         to{
+          transform: rotate(360deg);
+         }
+      }#loader5{
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      border: 20px solid rgb(124, 149, 16);
+      border-top: 20px solid black;
+      animation: spinAnimate2 2s ease-in 0s infinite normal;
+      border-right:20px solid #8a1f0d;
+      border-bottom:20px solid rgb(34, 0, 128);
+      display: inline-block;
+      
+      
+      }
+      @keyframes spinAnimate2{
+        from{
+          transform: rotate(3600deg);
+        }
+         to{
+          transform: rotate(0deg);
+         }
+        } 

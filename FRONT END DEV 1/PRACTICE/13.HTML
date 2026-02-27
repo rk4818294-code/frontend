@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WeatherNow</title>
+  <link rel="stylesheet" href="13.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>WeatherNow</h1>
+      <form id="weatherForm">
+        <input type="text" id="cityInput" placeholder="Enter city..." required />
+        <button type="submit">Get Weather</button>
+      </form>
+    </header>
+
+    <main>
+      <div class="current-weather" id="currentWeather"></div>
+      <h2 id="forecastTitle" class="hidden">5-Day Forecast</h2>
+      <div class="forecast-grid" id="forecastGrid"></div>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 WeatherNow | Powered by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

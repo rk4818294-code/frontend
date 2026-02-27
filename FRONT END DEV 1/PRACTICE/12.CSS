@@ -1,0 +1,112 @@
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.resume-container {
+  display: flex;
+  max-width: 1100px;
+  margin: 2rem auto;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #0077cc;
+  color: white;
+  padding: 2rem;
+  width: 30%;
+  text-align: center;
+}
+
+.sidebar h1 {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+}
+
+.sidebar .title {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.profile-pic img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.contact p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Main Content */
+.content {
+  padding: 2rem;
+  width: 70%;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.section h2 {
+  border-bottom: 2px solid #0077cc;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.item ul {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+  list-style: disc;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 0.5rem;
+}
+
+.skills-grid span {
+  background-color: #0077cc;
+  color: white;
+  padding: 0.5rem 0.7rem;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .resume-container {
+    flex-direction: column;
+  }
+  .sidebar,
+  .content {
+    width: 100%;
+  }
+}

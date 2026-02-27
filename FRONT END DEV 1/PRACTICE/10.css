@@ -1,0 +1,41 @@
+body{
+    padding: 25px;
+    height: 500px;
+    width: 400px;
+}
+
+ #a{
+    
+    border: 2px solid grey;
+    padding-left: 25px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.629);
+    background-color: grey;
+} 
+p{
+    font-size: large;
+    font-weight: bold;
+    padding-right: 20px;
+}
+#w{
+    background-color:  rgba(0, 195, 255, 0.596);
+    border-radius: 0.5rem;
+    }
+    span{
+        font-size: larger;
+        font-style: bolder;
+    }
+   #button{
+        background-color: rgba(0, 0, 255, 0.481);
+        color: white;
+        border-radius: 0.5rem;
+        margin-left: 150px;
+        margin-bottom: 20px;
+         height: 30px;
+
+         border: 0;
+         
+         
+        
+        
+        
+    }

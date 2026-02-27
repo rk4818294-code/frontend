@@ -1,0 +1,49 @@
+header{
+    display: flex;
+    background-color: rgba(0, 0, 255, 0.695);
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+nav{
+    display: flex;
+    list-style: none;
+    color: white;
+   
+}
+nav li{
+    padding-right: 20px;
+}
+
+h1 span{
+    color: rgba(255, 166, 0, 0.815);
+}
+.main-section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 60vw;
+    margin: 3rem auto;
+}
+.main-section h1{
+    font-size: 2rem;
+    color: blue;
+    margin-bottom:2rem;
+}
+.main-section p{
+    color: grey;
+    margin-bottom: 2rem;
+}
+.main-section button{
+    color:white;
+    background-color: rgba(0, 60, 255, 0.658);
+    height: 2rem;
+    width: 30rem;
+    border: 0;
+    border-radius: 1rem;
+    
+   
+    /* margin-left: 12rem;  */
+    
+}
+ 

@@ -1,0 +1,28 @@
+body{
+    background-color: rgba(250, 215, 245, 0.444);
+}
+header{
+    margin: 40px auto;
+    border-bottom: 2px solid black;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+.c1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-self:end;
+    gap: 5rem;
+
+}
+img{
+    width: 100%;
+    border: 3px solid rgba(12,12,12);
+}
+.c1 div h3{
+    justify-self: end;
+}

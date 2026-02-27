@@ -1,0 +1,29 @@
+.container{
+    background-color: antiquewhite;
+    height: 1000px;
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+}
+.item-1{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    
+    flex-basis: 100px;
+}
+.item-2{
+    background-color:green;
+    height: 200px;
+    width: 200px;
+}
+.item-3{
+    background-color: black;
+    height: 200px;
+    width: 200px;
+}
+.item-4{
+    background-color: white;
+    height: 200px;
+    width: 200px;
+}
