@@ -46,4 +46,4 @@ if (age>18){
 4.check greatest in 3 numbers
 */
 
-console.log(int("a"))
+console.log(int("a"));
