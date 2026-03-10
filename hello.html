@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Weather APP</h1>
+    <input
+      type="text"
+      id="city"
+      placeholder="Enter your city name"
+      style="padding: 10px; width: 200px; border: none; border-radius: 5px"
+    />
+
+    <button
+      onclick="getWeather()"
+      style="
+        padding: 10px 20px;
+        border: none;
+        background: #00a8ff;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      "
+    >
+      Get Weather
+    </button>
+
+    <div id="result" style="margin-top: 30px; font-family: 20px"></div>
+  </body>
+</html>
