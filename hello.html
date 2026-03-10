@@ -29,5 +29,23 @@
     </button>
 
     <div id="result" style="margin-top: 30px; font-family: 20px"></div>
+
+    <script>
+      async function getWeather(){
+      let city=document.getElementById("city").value;
+      let apiKey = "a205731459494991827132541242507"
+
+     let url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`
+     let response=await  fetch(url);
+     let data =await response.json();
+     let weather = `
+     <h2>${ data.location.name}</h2>
+     <p>Temperature: ${data.current.temp_c}c </p>
+ <p> Weather :${data.current.condition.text}</p>
+`
+  document.getElementById("result").innerHTML=weather
+  }
+     
+    </script>
   </body>
 </html>
