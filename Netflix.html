@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Big Netflix Clone</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+background:#000;
+color:white;
+font-family:Arial;
+overflow-x:hidden;
+}
+
+.logo{
+color:#e50914;
+font-size:32px;
+font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+display:flex;
+align-items:center;
+padding-left:80px;
+background:
+linear-gradient(to right,rgba(0,0,0,.9),rgba(0,0,0,.3)),
+url("https://image.tmdb.org/t/p/original/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg");
+background-size:cover;
+background-position:center;
+}
+
+/* MOVIE ROW */
+
+.movie-row{
+display:flex;
+gap:14px;
+overflow-x:auto;
+scroll-behavior:smooth;
+}
+
+.movie-row::-webkit-scrollbar{
+display:none;
+}
+
+/* MOVIE CARD */
+
+.movie{
+min-width:230px;
+height:140px;
+border-radius:6px;
+overflow:hidden;
+cursor:pointer;
+transition:.3s;
+position:relative;
+}
+
+.movie img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.movie:hover{
+transform:scale(1.18);
+z-index:20;
+}
+
+/* OVERLAY */
+
+.overlay{
+position:absolute;
+bottom:0;
+background:rgba(0,0,0,.8);
+width:100%;
+padding:8px;
+font-size:14px;
+opacity:0;
+transition:.3s;
+}
+
+.movie:hover .overlay{
+opacity:1;
+}
+
+/* SCROLL BUTTON */
+
+.scroll-btn{
+position:absolute;
+top:40%;
+z-index:10;
+}
+
+.left-btn{left:0}
+.right-btn{right:0}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-dark bg-black px-4">
+
+<span class="logo">NETFLIX</span>
+
+<input class="form-control w-auto ms-auto" id="searchBox" placeholder="Search movie">
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div>
+
+<h1 class="display-2 fw-bold">Interstellar</h1>
+
+<p class="w-50">
+Explore trending movies and shows in this Netflix style interface.
+</p>
+
+<button class="btn btn-light btn-lg">▶ Play</button>
+
+</div>
+
+</section>
+
+<!-- MOVIE SECTIONS -->
+
+<div class="container-fluid mt-5">
+
+<!-- ROW 1 -->
+
+<div class="position-relative mb-5">
+
+<h3>Trending Now</h3>
+
+<button class="btn btn-dark scroll-btn left-btn"
+onclick="scrollRow('row1',-400)">❮</button>
+
+<div class="movie-row" id="row1">
+
+<div class="movie"><img src="https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg"><div class="overlay">The Dark Knight</div></div>
+<div class="movie"><img src="https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg"><div class="overlay">Joker</div></div>
+<div class="movie"><img src="https://image.tmdb.org/t/p/w500/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg"><div class="overlay">Avengers</div></div>
+<div class="movie"><img src="https://image.tmdb.org/t/p/w500/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg"><div class="overlay">Matrix</div></div>
+<div class="movie"><img src="https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg"><div class="overlay">Fight Club</div></div>
+<div class="movie"><img src="https://image.tmdb.org/t/p/w500/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg"><div class="overlay">Inception</div></div>
+
+</div>
+
+<button class="btn btn-dark scroll-btn right-btn"
+onclick="scrollRow('row1',400)">❯</button>
+
+</div>
+
+<!-- ROW 2 -->
+
+<div class="position-relative mb-5">
+
+<h3>Popular</h3>
+
+<button class="btn btn-dark scroll-btn left-btn"
+onclick="scrollRow('row2',-400)">❮</button>
+
+<div class="movie-row" id="row2">
+
+<div class="movie"><img src="https://image.tmdb.org/t/p/w500/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg"><div class="overlay">Interstellar</div></div>
+<div class="movie"><img src="https://image.tmdb.org/t/p/w500/6ELJEzQJ3Y45HczvreC3dg0GV5R.jpg"><div class="overlay">Gladiator</div></div>
+<div class="movie"><img src="https://image.tmdb.org/t/p/w500/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg"><div class="overlay">Spider-Man</div></div>
+<div class="movie"><img src="https://image.tmdb.org/t/p/w500/5KCVkau1HEl7ZzfPsKAPM0sMiKc.jpg"><div class="overlay">John Wick</div></div>
+<div class="movie"><img src="https://image.tmdb.org/t/p/w500/1hRoyzDtpgMU7Dz4JF22RANzQO7.jpg"><div class="overlay">Avatar</div></div>
+
+</div>
+
+<button class="btn btn-dark scroll-btn right-btn"
+onclick="scrollRow('row2',400)">❯</button>
+
+</div>
+
+<!-- ROW 3 -->
+
+<div class="position-relative mb-5">
+
+<h3>Top Rated</h3>
+
+<button class="btn btn-dark scroll-btn left-btn"
+onclick="scrollRow('row3',-400)">❮</button>
+
+<div class="movie-row" id="row3">
+
+<div class="movie"><img src="https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg"><div class="overlay">The Godfather</div></div>
+<div class="movie"><img src="https://image.tmdb.org/t/p/w500/velWPhVMQeQKcxggNEU8YmIo52R.jpg"><div class="overlay">The Shawshank Redemption</div></div>
+<div class="movie"><img src="https://image.tmdb.org/t/p/w500/2TeJfUZMGolfDdW6DKhfIWqvq8y.jpg"><div class="overlay">Parasite</div></div>
+<div class="movie"><img src="https://image.tmdb.org/t/p/w500/suopoADq0k8YZr4dQXcU6pToj6s.jpg"><div class="overlay">Whiplash</div></div>
+
+</div>
+
+<button class="btn btn-dark scroll-btn right-btn"
+onclick="scrollRow('row3',400)">❯</button>
+
+</div>
+
+</div>
+
+<script>
+
+function scrollRow(id,amount){
+
+document.getElementById(id).scrollBy({
+left:amount,
+behavior:"smooth"
+})
+
+}
+
+/* SEARCH */
+
+document.getElementById("searchBox").addEventListener("keyup",function(){
+
+let value=this.value.toLowerCase()
+
+document.querySelectorAll(".movie").forEach(movie=>{
+
+let title=movie.innerText.toLowerCase()
+
+movie.style.display=title.includes(value)?"block":"none"
+
+})
+
+})
+
+</script>
+
+</body>
+</html>
+
