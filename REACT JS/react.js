@@ -1,4 +1,5 @@
 //                                                                     React JS
+// It is a frontend library which is used to (SPA) develop a single page application 
 
 // why we have to use react 
 
@@ -28,13 +29,13 @@
 
 
 // React Component :
-//                React component are just like a basic structure for every element that you are creating and you want to use it again and again
+// React component are just like a basic structure for every element that you are creating and you want to use it again and again
 
 // class based component :
 //  class based component  are E56 classes used to create components in react js 
 // they were the older way (before react hooks )
 // Example : 
-// import react {component}from "react";
+ import {component}from "react";
 class Mypage extends component{
     render(){
         return(
@@ -69,3 +70,11 @@ function MyFirstPage(){
 // performance                      slightly heavier                                 faster(mordern)
 // readability                      Complex                                          Easy
 // hooks support                    NO                                               yes
+
+
+
+
+
+// props in REACT JS ->
+
+
