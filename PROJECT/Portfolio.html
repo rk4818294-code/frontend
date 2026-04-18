@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background: #555;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background: white;
+    border-radius: 10px;
+}
+
+.project {
+    background: #eee;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px 15px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+}
+.dark {
+    background: #121212;
+    color: white;
+}
+
+.dark section {
+    background: #1e1e1e;
+    color: black;
+}
+
+.dark nav {
+    background: #222;
+}
+
+</style>
+<body>
+<header>
+    <h1>Rohit Kumar</h1>
+    <p>2nd Semester Student | Web Developer</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>B.Tech Computer Science (Cybersecurity) seeking opportunities to learn and build skills in cybersecurity, networking, and web development</p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript (Basic)</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+        <h3>Student ERP Dashboard</h3>
+        <p>A simple dashboard to track student attendance and marks.</p>
+    </div>
+
+    <div class="project">
+        <h3>Calculator</h3>
+        <p>A basic calculator using JavaScript.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: rohit@example.com</p>
+    <button onclick="showMessage()">Say Hello</button>
+</section>
+
+<footer>
+    <p>© 2026 Rohit Kumar</p>
+</footer>
+
+<script >
+    // 🌙 Dark Mode Toggle
+const toggleBtn = document.createElement("button");
+toggleBtn.innerText = "🌙 Dark Mode";
+toggleBtn.style.position = "fixed";
+toggleBtn.style.top = "10px";
+toggleBtn.style.right = "10px";
+document.body.appendChild(toggleBtn);
+
+toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+});
+
+
+// ✨ Smooth Scrolling
+document.querySelectorAll("nav a").forEach(link => {
+    link.addEventListener("click", function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        target.scrollIntoView({ behavior: "smooth" });
+    });
+});
+
+
+// ⌨️ Typing Effect
+const text = "Web Developer | Student";
+let index = 0;
+const typingElement = document.querySelector("header p");
+
+function typeEffect() {
+    if (index < text.length) {
+        typingElement.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 80);
+    }
+}
+
+typingElement.innerHTML = "";
+typeEffect();
+
+
+// 📂 Project Filter
+const projects = document.querySelectorAll(".project");
+
+function filterProjects(keyword) {
+    projects.forEach(project => {
+        if (project.innerText.toLowerCase().includes(keyword.toLowerCase())) {
+            project.style.display = "block";
+        } else {
+            project.style.display = "none";
+        }
+    });
+}
+
+// Example usage: filterProjects("calculator");
+
+
+// 📩 Contact Form Validation (if you add form later)
+function validateForm() {
+    const email = document.querySelector("#email");
+    if (!email.value.includes("@")) {
+        alert("Enter valid email!");
+        return false;
+    }
+    return true;
+}
+
+
+// 👋 Button Interaction
+function showMessage() {
+    alert("Hello Rohit! 👋 Thanks for visiting!");
+}
+
+</script>
+</body>
+</html>
