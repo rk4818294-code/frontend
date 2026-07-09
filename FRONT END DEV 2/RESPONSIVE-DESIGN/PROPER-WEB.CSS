@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   /* VERY IMPORTANT */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* HEADER */
+
+.header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+}
+
+.header nav{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+.header button{
+    letter-spacing: 0.05rem;
+    background-color: aqua;
+    border-radius: 0.8rem;
+    height: 2.3rem;
+    width: 5rem;
+    border: none;
+}
+
+/* MAIN LAYOUT */
+
+main{
+    display: flex;
+    min-height: 90vh;
+}
+
+/* SIDEBAR */
+
+.dashboard{
+    background-color: black;
+    color:white;
+    width: 260px;
+    padding: 2rem 1rem;
+}
+
+.dashboard h2{
+   margin-bottom: 2rem;
+}
+
+.dashboard ul li {
+  list-style: none;
+  padding: 12px 0;
+}
+
+/* CONTENT */
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+/* HERO SECTION */
+
+.right{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.right div{
+    flex:1;
+    min-width: 260px;
+}
+
+.right p{
+    color: grey;
+    margin-top: 1rem;
+}
+
+.right button{
+    height: 2.5rem;
+    width: 9rem;
+    background-color: aqua;
+    border: 0;
+    border-radius: 0.8rem;
+    margin-top: 1rem;
+}
+
+.right img{
+    width:100%;
+    max-width:500px;
+    height:auto;
+    border-radius: 0.9rem;
+}
+
+/* STATS BOX */
+
+.box{
+    margin-top: 2rem;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+    gap: 1.5rem;
+}
+
+.box h1{
+    color: greenyellow;
+    padding-bottom: 10px;
+}
+
+.box p{
+    color: rgba(128, 128, 128, 0.866);
+}
+
+.box div,.box-a div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 2rem;
+    border-radius:10px;
+}
+
+/* POPULAR */
+
+.Popular-learning {
+    margin-top: 3rem;
+}
+
+.box-a{ 
+    margin-top: 1.5rem;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 1.5rem;
+}
+
+.box-a h2{
+    color: greenyellow;
+    padding-bottom: 10px;
+}
+
+.box-a p{
+    color: rgba(128, 128, 128, 0.866);
+}
+
+#time{
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.773);
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: black;
+    color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* ============================= */
+/* 🔥 MOBILE RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 900px){
+
+    main{
+        flex-direction: column;
+    }
+
+    .dashboard{
+        width: 100%;
+        text-align: center;
+    }
+
+    .dashboard ul{
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+}
+
+/* EXTRA SMALL DEVICES */
+
+@media (max-width: 600px){
+
+    .header nav{
+        display:none;   /* hide menu */
+    }
+
+    .right{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .header{
+        justify-content: space-between;
+    }
+
+}

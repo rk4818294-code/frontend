@@ -1,0 +1,56 @@
+body{
+background-color: #222f3d;
+
+     
+}
+main{
+    display: flex;
+    justify-content: flex-end;
+    margin: 5%;
+}
+.box{
+    border-radius:0.8rem ;
+    display: flex;
+    justify-content:space-between;
+    height: 200px;
+    width: 600px;
+   background-color:#37495a;
+}
+.box-1{
+    height: 200px;
+    width: 200px;
+   background-image:url(Screenshot\ 2025-11-26\ 213035.png) ;
+   background-size: cover;
+   background-position: center;
+    border-radius: 50%;
+}
+.b{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.name{
+    color: aliceblue;
+    font-size: large;
+}
+
+.p{
+    color:rgba(0, 0, 0, 0.777);
+     font-size:medium;
+    font-weight: 500;
+   
+}
+.b span{
+    font-size:larger;
+    font-weight: 600;
+    color:white;
+    margin-right: 0.5rem;
+}
+button{
+    border: 0;
+    border-radius:0.5rem ;
+    height: 30%;
+    background-color:rgba(0, 0, 0, 0.273) ;
+    color: rgba(240, 248, 255, 0.73);
+    margin-top: 0.7rem;
+    margin-right:1.5rem;
+}

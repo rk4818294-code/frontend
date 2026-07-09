@@ -1,0 +1,59 @@
+#b{
+    height:50px;
+   }
+header{
+    height:70px;
+    background-color: plum;
+    justify-content: end;
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    
+  }
+  nav a{
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1.1rem;
+  }
+  main{
+    display: flex;
+    justify-content: space-around;
+    height:calc(100vh-100px) ;
+    align-items: center;
+  }
+  main h2{
+    font-size: 2rem;
+    color: purple;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 8px;
+  }
+  main p{
+    font-size: 1rem;
+    color: purple;
+    text-transform: capitalize;
+    font-weight: 200;
+    letter-spacing: 1px;
+  }
+  .left{
+    width: 40vw;
+  }
+  button{
+    border: 0;
+    background-color: pink;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 1rem;
+  }
+  #c{
+    border: 0;
+    background-color: rgb(255, 192, 235);
+    color:purple;
+    padding: 10px ;
+    border-radius: 5px;
+    margin-top: 1rem;
+    
+  }

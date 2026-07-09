@@ -1,0 +1,53 @@
+.e{
+   height: 350px;
+    width: 300px;
+    border: 2px solid black; 
+    justify-content: center; 
+     padding-left:35px;
+     box-shadow: 5px 5px grey;
+}
+    
+   
+
+SPAN{
+    font-size: larger;
+    
+   
+}
+p{
+    font-size:small;
+    padding-bottom: 0.5rem;
+}
+#B{
+    background-color: rgba(0, 0, 255, 0.622);
+    border-radius:0.5rem;
+    height: 30px;
+    color: aliceblue;
+}
+#C{
+    border-radius:0.5rem;
+    height: 30px;
+
+}
+ 
+#t{
+    margin-top: 30px;
+    height: 300px;
+    width: 300px;
+    border-radius:  50%;
+    background-color:black;
+     border: 20px solid grey;
+    border-top:20px solid blue ; 
+    border-bottom: 20px solid pink;
+    animation: spinAnimated2 2s ease-in 0s infinite reverse;
+    border-left:20px solid rgb(16, 141, 120);
+    
+ }
+ @keyframes spinAnimated2{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+ }

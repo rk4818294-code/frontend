@@ -1,0 +1,114 @@
+html{
+   font-size: 20px;
+}
+/* *{
+   color: white;
+} */
+h1{
+   color: rgba(61, 42, 165, 0.707);
+   background-color: rgba(108, 95, 160, 0.284);
+   border: 2px;
+   border-style: double dashed;
+   height:100px;
+   text-align: center;
+}
+   
+body{
+    background-image: linear-gradient(to right, #1cb5e07a , #000851); 
+}
+p{
+   font-style: italic;
+    border:4px ;
+    border-style: double dotted;
+   border-color: green;
+   margin: 2%;
+   color: rgba(89, 0, 255, 0.932);
+   border-radius: 50px;
+   height: max-content px;
+   width: auto;
+   text-align: center;
+   
+}
+button{
+   color: rgba(103, 95, 160, 0.378);
+}
+.mukul{
+   background-color: rgba(0, 0, 255, 0.779);
+   
+}
+.home{
+   /* background-color: rgba(245, 245, 220, 0.618); */
+   color: black;
+   display: flex;
+    justify-content:space-around;
+}
+i{
+   color: rgba(234, 220, 245, 0.529);
+}
+#div{
+   height: 200px;
+   width: 200px;
+   background-color: rgba(255, 0, 234, 0.189);
+   border-radius:50% ;
+   text-align: center;
+
+}
+
+#navbar{
+   padding: 0;
+   margin: 0;
+   height: 50px;
+   background-color: #0f1111;
+   
+
+   justify-content: center;
+}
+ a{
+   margin-right: 200px;
+ text-decoration: none;
+ }  
+   
+
+button{
+   background-color: #f08a0458;
+   color: white;
+   margin-right: 100px;
+   border-radius: 0.3rem;
+   
+}
+#logo{
+   color: #f08a04;
+   font-size: 25px;
+   margin-left: 50px;
+}
+ #click{
+   background-color:rgba(255, 166, 0, 0.488);
+   display: inline;
+}
+ #box{
+   height: 100px;
+   width: 100px;
+   margin: 25px;
+   padding: 25px;
+   display: inline-block;
+   background-image: url("nature-3082832_1280.jpg");
+   background-size: cover;
+  border-radius: 50%;
+  }
+  .pagal{
+   color: rgba(106, 10, 189, 0.747);
+  }
+   #nature{
+   height: 100px;
+   width: 100px;
+   background-image: url("nature-3082832_1280.jpg");
+   background-size: cover;
+   position:fixed;
+   right: 0px;
+   top: 50px;
+  } 
+ 
+
+ 
+
+ 

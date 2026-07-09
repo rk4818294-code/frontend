@@ -1,0 +1,127 @@
+body{
+    background-image: linear-gradient(135deg, #0b0b2b, #1b1b4b);
+}
+main{
+    display: flex;
+   justify-content: space-around;
+}
+h1{
+    letter-spacing: 0.1rem;
+    color: white;
+}
+.a{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+#rohit{
+    height: 30px; 
+    
+    padding-left: 30px;
+    border-radius: 0.4rem;
+    background-color:#0A1A2F;
+;
+    border: 0;
+
+}
+button{
+    
+    width: 70px;
+    height:35px;
+    border-radius: 0.5rem;
+    background-color: rgba(17, 17, 171, 0.433);
+    color: white;
+    border: 0;
+}
+#b{
+    margin: 20px;
+    height: 200px;
+    width: 690px;
+    background-color: rgba(0, 119, 255, 0.29);
+    background-image:url(https://tse4.mm.bing.net/th/id/OIP.YVaMa6BOIueNRrKBMNEuKAHaEK?pid=Api&P=0&h=180);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+#c{
+    margin-top: 20px;
+   height: 100px;
+   width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+#box{
+    height: 100px;
+    width: 150px;
+    background-color:rgba(0, 0, 0, 0.274);
+
+}
+#qwert{
+    color: white;
+    letter-spacing: 0.1rem;
+}
+.d{
+    height:180px;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#long{
+     height: 150px;
+    width: 100px;
+    background-color:rgba(0, 0, 0, 0.274);
+
+}
+#mnop{
+    color: white;
+    padding-left: 20px;
+   font-weight: 100;
+   font-size:medium;
+   
+}
+#klmn{
+    color:grey;
+    display: inline;
+    padding-left: 5px;
+   
+    
+}
+#abcd{
+    color:grey;
+    /* padding-top: 20px; */
+    display: inline;
+    padding-left: 30px;
+}
+#you{
+    height: 500px;
+    width: 300px;
+    margin-top: 40%;
+    margin-right: 20%;
+    background-color:rgba(0, 0, 0, 0.274);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#y{
+    height: 40px;
+    width: 250px;
+    background-color:rgba(0, 0, 0, 0.274);
+    border-radius: 0.6rem;
+    display:flex;
+}
+#kjhg{
+     color: white;
+    font-weight: 100;
+    font-size:medium;
+}
+#gmkm{
+    color: white;
+    padding-right: 30px;
+   padding-left: 130px;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Healthcare Appointment</title>
+</head>
+<body style="font-family: 'Segoe UI', sans-serif; background-color: #f0f8ff; margin: 0; padding: 0;">
+
+  <div style="max-width: 500px; background: white; margin: 3rem auto; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+    <h1 style="text-align: center; color: #2a6f97;">Book an Appointment</h1>
+    
+    <form id="appointmentForm" style="display: flex; flex-direction: column;">
+      <label for="name" style="margin-top: 1rem; font-weight: bold;">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required
+             style="padding: 0.5rem; margin-top: 0.3rem; border: 1px solid #ccc; border-radius: 5px;" />
+
+      <label for="email" style="margin-top: 1rem; font-weight: bold;">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required
+             style="padding: 0.5rem; margin-top: 0.3rem; border: 1px solid #ccc; border-radius: 5px;" />
+
+      <label for="phone" style="margin-top: 1rem; font-weight: bold;">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="e.g. 9876543210" required
+             style="padding: 0.5rem; margin-top: 0.3rem; border: 1px solid #ccc; border-radius: 5px;" />
+
+      <label for="date" style="margin-top: 1rem; font-weight: bold;">Appointment Date</label>
+      <input type="date" id="date" name="date" required
+             style="padding: 0.5rem; margin-top: 0.3rem; border: 1px solid #ccc; border-radius: 5px;" />
+
+      <label for="department" style="margin-top: 1rem; font-weight: bold;">Department</label>
+      <select id="department" name="department" required
+              style="padding: 0.5rem; margin-top: 0.3rem; border: 1px solid #ccc; border-radius: 5px;">
+        <option value="">--Select--</option>
+        <option value="General Medicine">General Medicine</option>
+        <option value="Pediatrics">Pediatrics</option>
+        <option value="Cardiology">Cardiology</option>
+        <option value="Dermatology">Dermatology</option>
+      </select>
+
+      <button type="submit"
+              style="margin-top: 1.5rem; padding: 0.7rem; background-color: #2a6f97; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">
+        Book Appointment
+      </button>
+    </form>
+
+    <p id="message" style="margin-top: 1rem; text-align: center; font-weight: bold;"></p>
+  </div>
+   
+
+
+
+    <script>
+    const form = document.getElementById("appointmentForm");
+    const message = document.getElementById("message");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name = form.name.value.trim();
+      const email = form.email.value.trim();
+      const phone = form.phone.value.trim();
+      const date = form.date.value;
+      const department = form.department.value;
+
+      if (name.length < 3) {
+        showMessage("Name must be at least 3 characters.", "red");
+        return;
+      }
+
+      if (!validateEmail(email)) {
+        showMessage("Invalid email format.", "red");
+        return;
+      }
+
+      if (!/^[6-9]\\d{9}$/.test(phone)) {
+        showMessage("Invalid phone number.", "red");
+        return;
+      }
+
+      if (!date || new Date(date) < new Date()) {
+        showMessage("Please choose a valid future date.", "red");
+        return;
+      }
+
+      if (department === "") {
+        showMessage("Please select a department.", "red");
+        return;
+      }
+
+      showMessage("Appointment booked successfully!", "green");
+      form.reset();
+    });
+
+    function validateEmail(email) {
+      return /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email);
+    }
+
+    function showMessage(text, color) {
+      message.textContent = text;
+      message.style.color = color;
+    }
+  </script>
+
+</body>
+</html>
+

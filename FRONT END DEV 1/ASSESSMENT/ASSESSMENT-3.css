@@ -1,0 +1,165 @@
+body{
+    background-color: rgba(255, 218, 185, 0.241);
+   
+}
+#ab{
+   letter-spacing: 0.4rem;
+padding-left: 20px;
+}
+#box{
+    margin-left: 20px;
+    margin-top: 40px;
+    /* background-color:white; */
+    border-radius: 0.5rem;
+    height: 1300px;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+ #a{
+    margin: 30px;
+    height: 300px;
+    width: 200px;
+    border: 2px solid black;
+  background-image: url(https://tse2.mm.bing.net/th/id/OIP.q-MjKhY_qdIcldnZOnvunwHaGM?pid=Api&P=0&h=180 );
+   background-repeat: no-repeat;
+    background-size:cover;
+     background-position: center;
+    
+    
+} 
+#b{
+    margin: 30px;
+    height: 300px;
+    width: 200px;
+    border: 2px solid black;
+    background-image:url(https://tse3.mm.bing.net/th/id/OIP.WlWj3ZlV8NXTFIHGCCizDAHaLH?pid=Api&P=0&h=180);
+    background-repeat: no-repeat;
+    background-size:cover;
+     background-position: center;
+     
+} 
+#c{
+    margin: 30px;
+    height: 300px;
+    width: 200px;
+    border: 2px solid black;
+     background-image:url(https://tse4.mm.bing.net/th/id/OIP.TJMUdewchUM4DXmAXW17BQHaI0?pid=Api&P=0&h=180);
+     background-repeat: no-repeat;
+    background-size:cover;
+     background-position: center;
+    
+} 
+#d{
+    margin: 30px;
+    height: 300px;
+    width: 200px;
+    border: 2px solid black;
+     background-image:url(https://tse1.mm.bing.net/th/id/OIP.oneVHycUcxWXVLfTs-J8EgHaE3?pid=Api&P=0&h=180);
+      background-repeat: no-repeat; 
+    background-size:cover;
+     background-position: center;
+    
+} 
+#e{
+    margin: 30px;
+    height: 300px;
+    width: 200px;
+    border: 2px solid black;
+    background-image:url(https://tse4.mm.bing.net/th/id/OIP.m6amcfGhWXEvB9Q3V2jJDQHaHa?pid=Api&P=0&h=180);
+    background-repeat: no-repeat;
+    background-size:cover;
+     background-position: center;
+    
+} 
+#f{
+    margin: 30px;
+    height: 300px;
+    width: 200px;
+    border: 2px solid black;
+    background-image:url(https://tse3.mm.bing.net/th/id/OIP.jtEtpa6l0i_OM1XBZShOCQHaEo?pid=Api&P=0&h=180);
+    background-repeat: no-repeat;
+    background-size:cover;
+     background-position: center;
+     
+} 
+#g{
+    margin: 30px;
+    height: 300px;
+    width: 200px;
+    border: 2px solid black;
+    background-image:url(https://tse3.mm.bing.net/th/id/OIP.lbr2Z-gGZRfku4w0kRwU1gHaE7?pid=Api&P=0&h=180);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    
+} 
+#h{
+    margin: 30px;
+    height: 300px;
+    width: 200px;
+    border: 2px solid black;
+     background-image:url(https://tse1.mm.bing.net/th/id/OIP.NuWZuBi8BzHYzSoGh5hbPAHaE8?pid=Api&P=0&h=180);
+     background-repeat: no-repeat;
+    background-size:cover;
+} 
+#i{
+    margin: 30px;
+    height: 300px;
+    width: 200px;
+    border: 2px solid black;
+    background-image:url(https://tse2.mm.bing.net/th/id/OIP.C7ezF_JywIJ6-Wd_AsvZ7wHaFB?pid=Api&P=0&h=180);
+    background-repeat: no-repeat;
+    background-size:cover;
+     background-position: center;
+
+} 
+button{
+   background-color:white ;
+    margin-left:50px;
+    margin-top: 145%;
+    width: 120px;
+    height: 30px;
+    border-radius: 0.7rem;
+    justify-content: center;
+    align-items: center;
+}
+h4{
+    color: orange;
+
+}
+main{
+    display: flex;
+   
+    
+   
+   
+}
+ #right{
+    height: 280px;
+    width: 300px;
+    border-radius: 0.8rem;
+    background-color: white;
+    background-image: url(https://tse2.mm.bing.net/th/id/OIF.p2MbHvWue7RFQCT1Pe5N6w?pid=Api&P=0&h=180);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+    
+}
+#r2{
+  padding-top: 190px;
+  padding-left: 30px;
+  
+ color:grey;
+} 
+#r1{
+    padding: 10px;
+    padding-left: 20px;
+}
+.right{
+    margin-right: 10px;
+}

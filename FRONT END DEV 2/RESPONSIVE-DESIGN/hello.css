@@ -1,0 +1,29 @@
+body{
+    background-color:rgba(0, 106, 255, 0.882);
+    height: 600px;
+    width:600px;
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
+    p{
+        /* background-color: blueviolet; */
+        font-size: smaller;
+        color: azure;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1024px)  {
+    p{
+        /* background-color: rgb(226, 43, 153); */
+        font-size:larger ;
+        color:red;
+    }
+}
+
+@media screen and (min-width:1024px)   {
+    p{
+        /* background-color: rgb(226, 43, 153); */
+        font-size:x-large ;
+        color:yellow;
+    }
+}
